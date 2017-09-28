@@ -1,0 +1,21 @@
+
+@each $color, $value in $theme-colors {
+  @include bg-variant('.bg-#{$color}', $value);
+}
+
+.bg-white { background-color: $white !important; }
+.bg-transparent { background-color: transparent !important; }
+
+// BootCats.com Navbar backgrounds
+@include bg-variant('.bg-navbar', $navbar-bg);
+
+// Inverse Heading
+// BootCats
+.text-light {
+  color: $inverse-color !important;
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: $inverse-headings-color;
+  }
+}
