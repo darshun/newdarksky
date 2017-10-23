@@ -28,11 +28,11 @@
         border-radius: $navbar_border_radius;
         border-style: solid;
         
-        border-width: 2px 0px 0px 0px;
+        border-width: 4px 0px 0px 0px;
       
        // BootCats
   border-radius: 0; // BootCats
-  box-shadow: 0px 5px 12px 0px rgba(51, 0, 100, 0.12),  inset 0px 0px 0px 0px rgba(0, 0, 0, 0); // BootCats
+   // BootCats
 
   // Because flex properties aren't inherited, we need to redeclare these first
   // few properities so that content nested within behave properly.

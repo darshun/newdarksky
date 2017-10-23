@@ -75,9 +75,9 @@ $grays: (
 
 $blue:    #0275d8 !default;
 $indigo:  #6610f2 !default;
-$purple:  #613d7c !default;
+$purple:  #6d62eb !default;
 $pink:    #ff5b77 !default;
-$red:     #ffffff !default;
+$red:     #d9534f !default;
 $orange:  #f0ad4e !default;
 $yellow:  #ffd500 !default;
 $green:   #5cb85c !default;
@@ -101,18 +101,18 @@ $colors: (
 ) !default;
 
 $theme-colors: (
-  primary: $red,
+  primary: $purple,
   secondary: $gray-600,
   success: $green,
   info: $cyan,
   warning: $yellow,
   danger: $red,
   light: $gray-100,
-  dark: $gray-900,
-  link-base: #330064,       // BootCats
-  link-visited: #330064, // BootCats
-  link-hover: #330064,     // BootCats
-  link-active: #330064    // BootCats
+  dark: #363446,
+  link-base: #000000,       // BootCats
+  link-visited: #6F37DB, // BootCats
+  link-hover: #5449F2,     // BootCats
+  link-active: #3758DB    // BootCats
 ) !default;
 
 // Set a specific jump point for requesting color jumps
@@ -160,10 +160,10 @@ $sizes: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:       #ffffff !default;
-$body-color:    #330064 !default;
-$inverse-bg:    $gray-900 !default;    // BootCats
-$inverse-color: $gray-100 !default; // BootCats
+$body-bg:       $white !default;
+$body-color:    $gray-900 !default;
+$inverse-bg:    #363446 !default;    // BootCats
+$inverse-color: #E0E0E0 !default; // BootCats
 
 // Links
 //
@@ -247,7 +247,7 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 
-$font-family-other: "Rubik", fantasy !default;
+$font-family-other: "Roboto", fantasy !default;
 $font-family-base:       $font-family-other !default;
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
@@ -269,12 +269,12 @@ $h5-font-size: 1.25rem !default;
 $h6-font-size: 1rem !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
-$headings-font-family:   Rubik !default;
-$headings-font-weight:   900 !default;
+$headings-font-family:   Titillium Web !default;
+$headings-font-weight:   700 !default;
 $headings-letter-spacing: 0pt !default; // BootCats
 $headings-line-height:   1.2 !default;
-$headings-color:         #330064 !default;
-$inverse-headings-color: $gray-100 !default; // BootCats
+$headings-color:         $gray-900 !default;
+$inverse-headings-color: #ffffff !default; // BootCats
 
 $display1-size: 6rem !default;
 $display2-size: 5.5rem !default;
@@ -354,20 +354,20 @@ $input-btn-padding-x-lg:    1rem !default;
 $input-btn-line-height-lg:  1.5 !default;
 
 $btn-font-weight:                $font-weight-normal !default;
-$btn-box-shadow:                 0px 5px 12px 0px rgba(51, 0, 100, 0.12),  inset 0px 0px 0px 0px rgba(0, 0, 0, 0) !default;
-$btn-focus-box-shadow:           0px 5px 12px 0px rgba(51, 0, 100, 0.12),  inset 0px 0px 0px 0px rgba(0, 0, 0, 0) !default;
-$btn-active-box-shadow:          0px 5px 12px 0px rgba(51, 0, 100, 0.12),  inset 0px 0px 0px 0px rgba(0, 0, 0, 0) !default;
+$btn-box-shadow:                 none !default;
+$btn-focus-box-shadow:           none !default;
+$btn-active-box-shadow:          none !default;
 
 $btn-link-disabled-color:        $gray-600 !default;
 
 $btn-block-spacing-y:            .5rem !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:              4px 4px 4px 4px !default;
-$btn-border-radius-lg:           #{4px* 1.5} #{4px * 1.5} #{4px * 1.5} #{4px * 1.5} !default;
-$btn-border-radius-sm:           #{4px* .75} #{4px * .75} #{4px * .75} #{4px * .75} !default;
+$btn-border-radius:              100px 100px 100px 100px !default;
+$btn-border-radius-lg:           #{100px* 1.5} #{100px * 1.5} #{100px * 1.5} #{100px * 1.5} !default;
+$btn-border-radius-sm:           #{100px* .75} #{100px * .75} #{100px * .75} #{100px * .75} !default;
 
-        $btn-border-width:        2px !default;
+        $btn-border-width:        0px !default;
       
 
 $btn-transition:                 all .15s ease-in-out !default;
@@ -375,19 +375,19 @@ $btn-transition:                 all .15s ease-in-out !default;
 
 // Forms
 
-$input-bg:                       #fff !default;
+$input-bg:                       #F0F4C3 !default;
 $input-disabled-bg:              $gray-200 !default;
 
 $input-color:                    #666 !default;
-$input-border-color:             #FAFAFA !default;
+$input-border-color:             #e1e1e1 !default;
 
-        $input-btn-border-width:        2px !default;
+        $input-btn-border-width:        1px !default;
       
-$input-box-shadow: inset 0px 5px 12px 2px rgba(51, 0, 100, 0.12),  inset 0px 0px 0px 0px rgba(0, 0, 0, 0) !default;
+$input-box-shadow: none !default;
 
-$input-border-radius:            4px 4px 4px 4px !default;
-$input-border-radius-lg:         #{4px* 1.5} #{4px * 1.5} #{4px * 1.5} #{4px * 1.5} !default;
-$input-border-radius-sm:         #{4px* .75} #{4px * .75} #{4px * .75} #{4px * .75} !default;
+$input-border-radius:            0 !default;
+$input-border-radius-lg:         0 !default;
+$input-border-radius-sm:         0 !default;
 
 $input-focus-bg:                 $input-bg !default;
 $input-focus-border-color:       lighten(theme-color("primary"), 25%) !default;
@@ -563,17 +563,17 @@ $nav-tabs-link-active-color:                  $gray-700 !default;
 $nav-tabs-link-active-bg:                     $body-bg !default;
 $nav-tabs-link-active-border-color:           #ddd !default;
 
-$nav-pills-border-radius:     4px 4px 4px 4px !default;
-$nav-pills-link-active-color: #330064 !default;
-$nav-pills-link-active-bg:    #ffffff !default;
+$nav-pills-border-radius:     100px 100px 100px 100px !default;
+$nav-pills-link-active-color: #ffffff !default;
+$nav-pills-link-active-bg:    #6d62eb !default;
 
 // Navbar
 
-$navbar-bg:                         #ffffff !default;
+$navbar-bg:                         #363446 !default;
 $navbar-border-radius:              0 !default;
-$navbar-border-color:               #330064 !default;
+$navbar-border-color:               #6d62eb !default;
 
-        $navbar-border-width:        2px 0px 0px 0px !default;
+        $navbar-border-width:        4px 0px 0px 0px !default;
       
 $navbar-padding-y:                  ($spacer / 2) !default;
 $navbar-padding-x:                  $spacer !default;
@@ -589,19 +589,19 @@ $navbar-toggler-padding-x:           .75rem !default;
 $navbar-toggler-font-size:           $font-size-lg !default;
 $navbar-toggler-border-radius:       $btn-border-radius !default;
 
-$navbar-dark-color:                 rgba($white,.85) !default;
-$navbar-dark-hover-color:           rgba($white,.9) !default;
-$navbar-dark-active-color:          rgba($white,1) !default;
-$navbar-dark-disabled-color:        rgba($white,.7) !default;
+$navbar-dark-color:                 rgba(#E6EE9C,.85) !default;
+$navbar-dark-hover-color:           rgba(#E6EE9C,.9) !default;
+$navbar-dark-active-color:          rgba(#E6EE9C,1) !default;
+$navbar-dark-disabled-color:        rgba(#E6EE9C,.7) !default;
 $navbar-dark-toggler-icon-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
-$navbar-dark-toggler-border-color:  rgba($white, 1) !default;
+$navbar-dark-toggler-border-color:  rgba(#E6EE9C, 1) !default;
 
-$navbar-light-color:                rgba(#330064,.85) !default;
-$navbar-light-hover-color:          rgba(#330064,.9) !default;
-$navbar-light-active-color:         rgba(#330064,1) !default;
-$navbar-light-disabled-color:       rgba(#330064,.7) !default;
+$navbar-light-color:                rgba($black,.85) !default;
+$navbar-light-hover-color:          rgba($black,.9) !default;
+$navbar-light-active-color:         rgba($black,1) !default;
+$navbar-light-disabled-color:       rgba($black,.7) !default;
 $navbar-light-toggler-icon-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
-$navbar-light-toggler-border-color: rgba(#330064, 1) !default;
+$navbar-light-toggler-border-color: rgba($black, 1) !default;
 
 // Pagination
 
@@ -634,13 +634,13 @@ $pagination-disabled-border-color:     #ddd !default;
 // Jumbotron
 
 $jumbotron-padding:              2rem !default;
-$jumbotron-bg:                   #ffffff !default;
+$jumbotron-bg:                   #B13FF9 !default;
 $jumbotron-border-color: #e1e1e1 !default;
 
         $jumbotron-border-width:        1px !default;
       
-
-$jumbotron-color: #330064 !default;
+$jumbotron-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.15),  inset 0px 0px 0px 0px rgba(0, 0, 0, 0);
+$jumbotron-color: #ffffff !default;
 
 
 // Cards
@@ -648,15 +648,19 @@ $jumbotron-color: #330064 !default;
 $card-spacer-y:            .75rem !default;
 $card-spacer-x:            1.25rem !default;
 
-        $card-border-width:        1px !default;
+        $card-border-width-top:    6px !default;
+        $card-border-width-right:  0px !default;
+        $card-border-width-bottom: 0px !default;
+        $card-border-width-left:   0px !default;
+        $card-border-width:        $card-border-width-top !default;
       
-$card-border-radius:       4px 4px 4px 4px !default;
-$card-border-color:        #e1e1e1 !default;
+$card-border-radius:       0 !default;
+$card-border-color:        #6d62eb !default;
 $card-inner-border-radius: calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:              rgba($black, .03) !default;
-$card-bg:                  #fff !default;
-$card-color:               #330064 !default;
-$card-box-shadow: 0px 5px 12px 2px rgba(51, 0, 100, 0.12),  inset 0px 0px 0px 0px rgba(0, 0, 0, 0) !default;
+$card-bg:                  #504b66 !default;
+$card-color:               #ffffff !default;
+$card-box-shadow: 9px 10px 25px -3px rgba(0, 0, 0, 0.34),  inset 0px 0px 0px 0px rgba(0, 0, 0, 0) !default;
 
 $card-img-overlay-padding: 1.25rem !default;
 

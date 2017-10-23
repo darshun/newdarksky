@@ -12,14 +12,14 @@
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  background: #ffffff;
-  border-color: #FAFAFA;
-  color: #330064;
+  background: #6d62eb;
+  border-color: #AED581;
+  color: #ffffff;
   
-        border: $btn-border-width solid #FAFAFA;
+        border: none;
       
   
-  box-shadow: $btn-box-shadow;
+  
   @include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
 

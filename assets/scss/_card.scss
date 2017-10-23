@@ -131,16 +131,14 @@
 .card-img-top {
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
   
-        border-top-right-radius: calc(#{4px} - #{$card-border-width});
-        border-top-left-radius: calc(#{4px} - #{$card-border-width});
+        border-radius: none;
       
 }
 
 .card-img-bottom {
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
   
-        border-bottom-right-radius: calc(#{4px} - #{$card-border-width});
-        border-bottom-left-radius: calc(#{4px} - #{$card-border-width});
+        border-radius: none;
       
 }
 

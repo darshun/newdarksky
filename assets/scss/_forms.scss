@@ -19,10 +19,10 @@
   background-image: none;
   background-clip: padding-box;
   
-        border: $input-btn-border-width solid $input-border-color;
+        border: none;
       
   
-  box-shadow: $input-box-shadow;
+  
 
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
   @if $enable-rounded {
